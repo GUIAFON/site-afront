@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="manifest" href="manifest.json">
+    <title>AFRONT</title>
+    <script src='main.js'></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#" onclick="mostraPagina('#paginainicial')"><p class="priscila">Priscila Bernardo</p></a>
+        <button class="navbar-toggler collapsed d-lg-none flex-column justify-content-around" type="button" data-toggle="collapse" data-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="menuNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#sobre')" data-toggle="collapse" data-target="#menuNavbar">Sobre trancista</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#modelos-de-tranca')" data-toggle="collapse" data-target="#menuNavbar">Modelos de tranças</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="mostraPagina('#agendamento')" data-toggle="collapse" data-target="#menuNavbar">Agendamento</a>
+            </li>
+            <li id="installAppBt" class="nav-item collapse">
+              <hr/>
+              <a class="nav-link" href="#" onclick="installApp()" data-toggle="collapse" data-target="#menuNavbar">Instalar APP</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <main class="container w-100 h-100 p-0">
+          
+<section id="home" class="p-5 text-center h-100">
+  
+  <img class="logotipo" src="imagens/afront.png">
+    <a class="nav-link" href="#" onclick="mostraPagina('#paginainicial')"><h3 class="entrar">entrar</h3></a>
+      
+</section>
+
+<section id="paginainicial" class="text-center collapse">
+
+  <div class="container-header">
+    <img src="imagens/cover.png" alt="Snow" style="width:100%;">
+    <a class="pri-header" href="#" onclick="mostraPagina('#sobre')"><div class="centered">Seja você sua própria inspiração</div></a>
+  </div>
+
+  <div class="align-center">
+    <a href="#" onclick="mostraPagina('#modelos-de-tranca')"><button class="botao-modelos">Modelos de tranças</button></a><br>
+    <a href="#" onclick="mostraPagina('#agendamento')"><button class="botao-agendamento">Agendamento</button></a><br>
+    </div>
+
+</section>
+
+<!--SOBRE A TRANCISTA-->
+
+<section id="sobre" class="sobre p-5 text-center collapse">  
+  <img src="imagens/pri.png" class="pri">
+  <h3 class="historia text-center">Por debaixo de minhas Tranças</h1>  
+  <hr class="espaçamento">
+  <i><p class="priscila-historia text-justify">
+      Desde os meus 5 anos, eu alisava o cabelo. Cresci acreditando que meu cabelo era ruim e na adolescência, foi pior. A pior fase é quando você entra no ensino fundamental: os cochichos, os olhares... admiro adolecentes que tiveram opinião própria e se aceitaram preta desde pequena.
+      Eu, como a grande maioria das mulheres pretas, não me aceitava preta. Tinha vergonha da minha boca, do meu nariz, principalmente do <strong>meu cabelo</strong>! E o pior, cresci julgando outras manas pretas por terem o cabelo "ruim".
+      Por isso eu digo: <strong>quando você se empodera, você ajuda outras mulheres que estão passando pelo mesmo que você passou.</strong></p>
+      <p class="priscila-historia text-justify">Comecei a ver as gringas com tranças, com black e se amando, e eu queria ter essa auto estima... de <strong>me amar como eu sou.</strong> Foi onde decidi entrar em transição. Aprendi a fazer as <strong>boxbraids</strong> sozinha, só olhando, e ai começou a minha história com as tranças.
+      Hoje posso te falar que eu me amo. Seja com trança, com black, com o cabelo raspado... e é essa <strong>auto estima</strong> e <strong>auto confiança</strong> que quero passar para as mulheres preta que até nos dias de hoje passam pelo o que eu passei.</p></i>
+      
+      <img class="imagem-rodape" src="imagens/Logo.png"/>
+      
+      <p class="assinatura">Priscila Bernardo</p>
+
+      <hr class="footer">
+
+</section>
+
+<!--MODELOS DE TRANÇAS-->
+
+<section id="modelos-de-tranca" class="collapse">
+
+<div class="hair">
+  <div class="quem_somos">
+    <div class="container area_flex">
+        <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+          <a href="#" onclick="mostraPagina('#box')"><img src="imagens/box-braid.png"></a>
+        </div>
+            <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                <h3 class="titulo-tranca">Box-braids</h3>
+                <hr class="linha2"> 
+        <p class="descricao-da-tranca">Este estilo de trança é feito rente a raiz do couro cabeludo, pode ser feita com o próprio cabelo ou com cabelo sintético, jumbo e Kanekalon. Com isso, ela pode ser feita com fios mais curtos ou longos e coloridos. São pequenas tranças individuais feitas em toda a extensão dos fios.</p>
+        <p class="card-text"><small class="text-muted">A partir de R$180</small></p>
+        <a class="ir-whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=55553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20box-braid%2C%20que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+      <div class="quem_somos">
+        <div class="container area_flex">
+            <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+              <a href="#" onclick="mostraPagina('#boxeadora')"><img src="imagens/boxeadora.png"></a>
+            </div>
+                <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                    <h3 class="titulo-tranca">Boxeadora</h3>
+                <hr class="linha2">   
+            <p class="descricao-da-tranca">A trança boxeadora, também conhecida como boxer braid, é um penteado feito com duas tranças embutidas, sendo uma de cada lado da cabeça. No modelo mais tradicional, elas ficam bem no alto da cabeça, mas você pode encontrar algumas variações em que as tranças ficam mais próximas das orelhas.</p>
+            <p class="card-text"><small class="text-muted">A partir de R$50</small></p>
+            <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Boxeadora.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+        </div>
+        </div>
+        </div>
+        </div>
+
+         <div class="quem_somos">
+    <div class="container area_flex">
+        <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+          <a href="#" onclick="mostraPagina('#croche')"><img src="imagens/croche.png"></a>
+        </div>
+            <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                <h3 class="titulo-tranca">Crochê</h3>
+            <hr class="linha2">   
+        <p class="descricao-da-tranca">Penteado criado a partir de extensões ou apliques de cabelo colocadas nos fios naturais penteados em tranças raiz embutida. Tem esse nome por conta do método que é utilizado para “costurar” as extensões de cabelo: para a colocação do alongamento, você precisa de uma agulha de tapete (que funciona como um gancho com trava). O ponto para fixar o cabelo da extensão à trança sintética é parecido com o de crochê.</p>
+        <p class="card-text"><small class="text-muted">A partir de R$180</small></p>
+        <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Croch%C3%AA.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="quem_somos">
+      <div class="container area_flex">
+          <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+            <a href="#" onclick="mostraPagina('#entrelace')"><img src="imagens/entrelace.png"></a>
+          </div>
+              <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                  <h3 class="titulo-tranca">entrelace</h3>
+              <hr class="linha2">   
+          <p class="descricao-da-tranca">Começa trançando mechas rente à raiz com o cabelo natural e depois vai costurando telas com mechas postiças nessas mesmas tranças, bem perto do couro cabeludo.</p>
+          <p class="card-text"><small class="text-muted">A partir de R$150</small></p>
+          <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20colocar%20Entrelace.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="quem_somos">
+        <div class="container area_flex">
+            <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+              <a href="#" onclick="mostraPagina('#fulani')"><img src="imagens/fulani.png"></a>
+            </div>
+                <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                    <h3 class="titulo-tranca">fulani</h3>
+                <hr class="linha2">   
+            <p class="descricao-da-tranca">A trança fulani é trançada de trás da cabeça para frente, possuindo uma ou duas tranças nagô de cada lado da orelha com as pontas da trança soltas para frente.</p>
+            <p class="card-text"><small class="text-muted">A partir de R$160</small></p>
+            <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Fulani.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="quem_somos">
+          <div class="container area_flex">
+              <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                <a href="#" onclick="mostraPagina('#ghanna')"><img src="imagens/ghanna.png"></a>
+              </div>
+                  <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                      <h3 class="titulo-tranca">ghanna</h3>
+                  <hr class="linha2">   
+              <p class="descricao-da-tranca">São tranças com extensão, ou seja, elas não são feitas apenas com o cabelo natural, mas sim, recebem uma extensão nos fios. Elas podem ser feitas com linhas de crochê, cabelo sintético, lã ou jumbo, atingindo o comprimento desejado.</p>
+              <p class="card-text"><small class="text-muted">A partir de R$80</small></p>
+              <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Ghanna.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+          </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="quem_somos">
+            <div class="container area_flex">
+                <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                  <a href="#" onclick="mostraPagina('#good')"><img src="imagens/good.png"></a>
+                </div>
+                    <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                        <h3 class="titulo-tranca">good</h3>
+                    <hr class="linha2">   
+                <p class="descricao-da-tranca">Trança com cachos</p>
+                <p class="card-text"><small class="text-muted">A partir de R$200</small></p>
+                <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20com%20cachos.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+            </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="quem_somos">
+              <div class="container area_flex">
+                  <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                    <a href="#" onclick="mostraPagina('#lemonade')"><img src="imagens/lemonade.png"></a>
+                  </div>
+                      <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                          <h3 class="titulo-tranca">lemonade</h3>
+                      <hr class="linha2">   
+                  <p class="descricao-da-tranca">São diversas tranças finas e apertadas, feitas da raiz às pontas em todo o cabelo. O que é o comprimento das tranças, que são super compridas nas lemonade braids.</p>
+                  <p class="card-text"><small class="text-muted">A partir de R$80</small></p>
+                  <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Lemonade.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+              </div>
+              </div>
+              </div>
+              </div>
+
+              <div class="quem_somos">
+                <div class="container area_flex">
+                    <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                      <a href="#" onclick="mostraPagina('#nago')"><img src="imagens/nago.jpg"></a>
+                    </div>
+                        <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                            <h3 class="titulo-tranca">nagô</h3>
+                        <hr class="linha2">   
+                    <p class="descricao-da-tranca">Este estilo de trança é feito rente a raiz do couro cabeludo, pode ser feita com o próprio cabelo ou com cabelo sintético, jumbo e Kanekalon. Com isso, ela pode ser feita com fios mais curtos ou longos e coloridos, podendo ser feitas em todo o comprimento do cabelo ou parcialmente.</p>
+                    <p class="card-text"><small class="text-muted">A partir de R$35</small></p>
+                    <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Nag%C3%B4.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="quem_somos">
+                  <div class="container area_flex">
+                      <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                        <a href="#" onclick="mostraPagina('#nago-fulani')"><img src="imagens/nago-fulani.png"></a>
+                      </div>
+                          <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                              <h3 class="titulo-tranca">nagô + fulani</h3>
+                          <hr class="linha2">   
+                      <p class="descricao-da-tranca">Trança nagô frontal com fulani.</p>
+                      <p class="card-text"><small class="text-muted">A partir de R$50</small></p>
+                      <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20nag%C3%B4%20com%20frontal%20fulani.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+                <div class="quem_somos">
+                  <div class="container area_flex">
+                      <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                        <a href="#" onclick="mostraPagina('#rabo')"><img src="imagens/rabo.png"></a>
+                      </div>
+                          <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                              <h3 class="titulo-tranca">Rabo de cavalo</h3>
+                          <hr class="linha2">   
+                      <p class="descricao-da-tranca">Rabo de cavalo orgânico.</p>
+                      <p class="card-text"><small class="text-muted">A partir de R$60</small></p>
+                      <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20um%20Rabo%20de%20Cavalo.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+                <div class="quem_somos">
+                  <div class="container area_flex">
+                      <div class="caixa1 wow zoomIn  animated" data-wow-delay="00.2s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.2s; animation-name: zoomIn;">
+                        <a href="#" onclick="mostraPagina('#twist')"><img src="imagens/twist.png"></a>
+                      </div>
+                          <div class="caixa wow zoomIn  animated" data-wow-delay="00.1s" data-wow-duration="1000ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 0.1s; animation-name: zoomIn;">
+                              <h3 class="titulo-tranca">Twist</h3>
+                          <hr class="linha2">   
+                      <p class="descricao-da-tranca">As twist são trançadas somente com duas mechas do cabelo. O cabelo é torcido, lembrando a aparência de uma corda, dando um diferencial para a trança. Para essa técnica, pode-se usar fios sintéticos ou lã para dar mais comprimento e volume. Diferente das outras tranças que são feitas pela raiz, a twist é presa na raiz permitindo que as tranças fiquem mais soltas.</p>
+                      <p class="card-text"><small class="text-muted">A partir de R$180</small></p>
+                      <a class="ir-whatsapp" target="_blank"  href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Twist.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F" id="quero-fazer-essa">Quero fazer essa</a>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+</section>
+
+<section id="box" class="collapse">
+  <h3 class="galeria-tranca">Box-braids</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/box-braid2.jpg">
+      <img src="imagens/box-braid4.jpg">
+      <img src="imagens/box-braid6.jpg">
+      <img src="imagens/box-braid8.jpg">
+      <img src="imagens/box-braid10.jpg">
+    </div>
+    <div class="coluna">
+        <img src="imagens/box-braid3.jpg">
+        <img src="imagens/box-braid5.jpg">
+        <img src="imagens/box-braid7.jpg">
+        <img src="imagens/box-braid9.jpg">
+        <img src="imagens/box-braid11.jpg">
+        <img src="imagens/box-braid12.jpg">
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20box-braid%2C%20que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="boxeadora" class="collapse">
+  <h3 class="galeria-tranca">Trança Boxeadora</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/boxeadora2.jpg">
+      <img src="imagens/boxeadora3.jpg">
+      <img src="imagens/boxeadora5.jpg">
+      <img src="imagens/boxeadora7.jpg">
+      <img src="imagens/boxeadora9.jpg">
+      <img src="imagens/boxeadora11.jpg">
+      <img src="imagens/boxeadora13.jpg">
+      
+    </div>
+    <div class="coluna">
+        <img src="imagens/boxeadora1.jpg">
+        <img src="imagens/boxeadora4.jpg">
+        <img src="imagens/boxeadora6.jpg">
+        <img src="imagens/boxeadora8.jpg">
+        <img src="imagens/boxeadora10.jpg">
+        <img src="imagens/boxeadora12.jpg">
+        <img src="imagens/boxeadora14.jpg">
+
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Boxeadora.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="croche" class="collapse">
+  <h3 class="galeria-tranca">Trança Crochê</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/croche2.jpg">
+      <img src="imagens/croche4.jpg">
+    </div>
+    <div class="coluna">
+        <img src="imagens/croche3.jpg">
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Croch%C3%AA.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="entrelace" class="collapse">
+  <h3 class="galeria-tranca">Entrelace</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/entrelace1.jpg">
+      <img src="imagens/entrelace4.jpg">
+      <img src="imagens/entrelace5.jpg">
+      <img src="imagens/entrelace8.jpg">
+      <img src="imagens/entrelace9.jpg">
+      <img src="imagens/entrelace11.jpg">
+      <img src="imagens/entrelace13.jpg">
+    </div>
+    <div class="coluna">
+        <img src="imagens/entrelace2.jpg">
+        <img src="imagens/entrelace3.jpg">
+        <img src="imagens/entrelace6.jpg">
+        <img src="imagens/entrelace7.jpg">
+        <img src="imagens/entrelace10.jpg">
+        <img src="imagens/entrelace12.jpg">
+        <img src="imagens/entrelace14.jpg">
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20colocar%20Entrelace.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="fulani" class="collapse">
+  <h3 class="galeria-tranca">Fulani</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/Fulani1.jpg">
+      <img src="imagens/Fulani3.jpg">
+    </div>
+    <div class="coluna">
+        <img src="imagens/Fulani2.jpg">
+        <img src="imagens/Fulani4.jpg">
+        <img src="imagens/Fulani5.jpg">
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Fulani.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="ghanna" class="collapse">
+  <h3 class="galeria-tranca">Trança Ghanna</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/ghanna1.jpg">
+      <img src="imagens/ghanna4.jpg"> 
+    </div>
+    <div class="coluna">
+      <img src="imagens/ghanna2.jpg">
+      <img src="imagens/ghanna3.jpg">
+      <img src="imagens/ghanna5.jpg">      
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Ghanna.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="rabo" class="collapse">
+  <h3 class="galeria-tranca">rabo de cavalo</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/rabo1.jpg">
+      <img src="imagens/rabo2.jpg">
+      <img src="imagens/nago1.jpg"> 
+      <img src="imagens/nago4.jpg">
+      <img src="imagens/nago5.jpg"> 
+    </div>
+    <div class="coluna">
+      <img src="imagens/rabo3.jpg">
+      <img src="imagens/rabo4.jpg">
+      <img src="imagens/nago2.jpg">   
+      <img src="imagens/nago3.jpg">
+      <img src="imagens/nago6.jpg">   
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20um%20Rabo%20de%20Cavalo.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="lemonade" class="collapse">
+  <h3 class="galeria-tranca">lemonade braid</h3>
+  <hr class="linha3">
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/lemonade1.jpg">
+      <img src="imagens/lemonade2.jpg"> 
+    </div>
+    <div class="coluna">
+      <img src="imagens/lemonade3.jpg">
+      <img src="imagens/lemonade4.jpg">   
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Lemonade.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="nago-fulani" class="collapse">
+
+  <h3 class="galeria-tranca">Trança nagô + fulani</h3>
+  <hr class="linha3">
+
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/nago-fulani1.jpg">
+      <img src="imagens/nago-fulani2.jpg">
+      <img src="imagens/nago-fulani5.jpg"> 
+      <img src="imagens/nago-fulani7.jpg">
+    </div>
+    <div class="coluna">
+      <img src="imagens/nago-fulani3.jpg">
+      <img src="imagens/nago-fulani4.jpg">   
+      <img src="imagens/nago-fulani6.jpg">
+    </div>
+  </div>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20nag%C3%B4%20com%20frontal%20fulani.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+</section>
+
+<section id="nago" class="collapse">
+
+  <h3 class="galeria-tranca">Trança Nagô</h3>
+  <hr class="linha3">
+
+  <div class="galeria"> 
+    <div class="coluna">
+      <img src="imagens/nago10.jpg">
+      <img src="imagens/nago13.jpg">
+      <img src="imagens/nago8.jpg">
+      <img src="imagens/nago15.jpg">
+      <img src="imagens/nago16.jpg">
+      <img src="imagens/nago18.jpg">
+      <img src="imagens/nago20.jpg">
+    </div>
+    <div class="coluna">
+      <img src="imagens/nago12.jpg">
+      <img src="imagens/nago7.jpg">
+      <img src="imagens/nago9.jpg">
+      <img src="imagens/nago14.jpg">
+      <img src="imagens/nago17.jpg">
+      <img src="imagens/nago19.jpg">
+      <img src="imagens/nago.jpg">
+    </div>
+  </div>
+
+<div class="alinhar">
+  <a target="_blank" href="https://atsapp.com/send?phone=553592637086&text=Ol%C3%A1%2C%20Priscila%21%20Gostaria%20de%20fazer%20a%20tran%C3%A7a%20Nag%C3%B4.%20Que%20dia%20voc%C3%AA%20pode%20me%20atender%3F"></a></a><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+</div>
+
+</section>
+
+<!--PÁGINA DE AGENDAMENTO-->
+
+<section id="agendamento" class="sobre collapse">
+
+<h3 class="funcionamento">Horários de funcionamento</h3>
+<hr class="linha">
+
+<ul class="dias-de-funcionamento">
+  <li class="dia">Segunda-Feira</li>
+  <li class="dia">Terça-Feira</li>
+  <li class="dia">Quarta-Feira</li>
+  <li class="dia">Quinta-Feira</li>
+  <li class="dia">Sexta-Feira</li>   
+  <li class="dia">Sábado</li>
+  <li class="dia">Domingo</li>
+</ul>
+<ul class="dias-de-funcionamento">
+  <li class="horario">Fechado</li>
+  <li class="horario">10:00 - 20:00</li>
+  <li class="horario">10:00 - 20:00</li>
+  <li class="horario">10:00 - 20:00</li>
+  <li class="horario">10:00 - 18:00</li>
+  <li class="horario">10:00 - 20:00</li>
+  <li class="horario">Fechado</li>
+</ul>
+
+<p class="observacao">Os horários podem mudar nos feriados e finais de semana</p>
+
+  <h3 class="funcionamento">Localização</h3>
+  <hr class="linha">
+
+<strong><p class="localizacao">Atendendo apenas à domícilio no momento.</p></strong>
+
+<!-- DESATIVADO NO MOMENTO, A TRANCISTA ESTÁ DE MUDANÇA
+  <div id="mapinha">
+  <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58516.360564031485!2d-46.71579972089842!3d-23.558653399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce579b4f1305d1%3A0x7de15f4ad42423a!2sPanela%20na%20Rua!5e0!3m2!1spt-BR!2sbr!4v1645494289736!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+--> 
+
+  <h3 class="funcionamento">Redes sociais</h3>
+  <hr class="linha">
+
+  <a class="insta" target="_blank" href="https://www.instagram.com/priafront/"><button class="redes"><i class="bi bi-instagram"></i></button></a>
+  <a class="insta" target="_blank" href="https://www.instagram.com/priafront/"><button class="nome-das-redes">priafront</button></a>
+  <br>
+  <a class="insta" target="_blank" href="https://www.facebook.com/pritrancista/"><button style="margin-top: 10px;"class="redes"><i class="fa fa-facebook"></i></button></a>
+  <a class="insta" target="_blank" href="https://www.facebook.com/pritrancista/"><button class="nome-das-redes">pritrancista</button></a>
+
+  <div class="alinhar">
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=553592637086&text=Ol%C3%A1%20Priscila%21%20Adorei%20seu%20trabalho%20e%20gostaria%20de%20ser%20atendida%20por%20voc%C3%AA%21"><button class="botao-agendar">Clique aqui para agendar<i class="bi bi-whatsapp"></i></button></a><br>
+  </div>
+
+  <hr class="footer">
+
+</section>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

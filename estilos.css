@@ -1,0 +1,450 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('http://fonts.cdnfonts.com/css/kubo-sans');
+@import url('http://fonts.cdnfonts.com/css/baginda-script');
+@import url('http://fonts.cdnfonts.com/css/gelion');
+
+html, body{ margin: 0; padding: 0; height: 100%; background-color: #f4f4f4;}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+.navbar-brand{ 
+    height: 57px !important;
+}
+.bg-dark{ 
+    background-color: #f4f4f4 !important;
+}
+.nav-link{ 
+    color: #717171 !important; 
+    font-family: Montserrat !important; 
+    font-size: 15px;
+    line-height: 15px;}
+.navbar-toggler{
+    width: 20px; 
+    height: 20px; 
+    position: relative; 
+    transition: .5s ease-in-out; 
+    padding: 10px 15px !important; 
+}
+.navbar-toggler, .navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler-icon:focus{ 
+    outline: none; box-shadow: none; border: 0;
+}
+.navbar-toggler span{ 
+    margin: 0; 
+    padding: 0;
+}
+.toggler-icon{ 
+    display: block; 
+    position: absolute; 
+    height: 3px; 
+    width: 100%; 
+    background: #717171; 
+    border-radius: 1px; 
+    opacity: 1; 
+    left: 0; 
+    transform: 
+    rotate(0deg); 
+    transition: .25s ease-in-out;
+}
+.middle-bar{ 
+    margin-top: 0px;
+}
+.navbar-toggler .top-bar{ 
+    margin-top: 0px; 
+    transform: rotate(135deg);
+}
+.navbar-toggler .middle-bar{ 
+    opacity: 0; 
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar{ 
+    margin-top: 0px; 
+    transform: rotate(-135deg);
+}
+.navbar-toggler.collapsed .top-bar{ 
+    margin-top: -10px; 
+    transform: rotate(0deg);}
+.navbar-toggler.collapsed .middle-bar{ 
+    opacity: 1; 
+    filter: alpha(opacity=100);}
+.navbar-toggler.collapsed .bottom-bar{ 
+    margin-top: 10px; 
+    transform: rotate(0deg);
+}
+.nav-item{ 
+    padding: 5px;
+}
+.navbar-nav{ 
+    margin-top: 10px;
+}
+
+/*PRIMEIRA PÁGINA*/
+
+.welcome{ 
+    color: #292929; 
+    text-transform: uppercase; 
+    font-family: bebas neue; 
+    font-weight: 400; 
+    font-size: 60px;    
+    margin-top: 20%; 
+}
+.imagem-de-inicio{ 
+    text-align: center; 
+    margin: 20px; 
+    width: 100%;
+}
+.logotipo { 
+    top: 180px;
+    width: 400px; 
+    position: absolute; 
+    left: -54px;
+}
+.entrar { 
+    color: #292929; 
+    font-family: 'Kubo Sans', 
+    sans-serif; margin-top: 380px; 
+    font-size: 25px; 
+    text-transform: uppercase; 
+    transform: scale(1); animation: pulse 7s infinite;}
+@keyframes pulse {
+	25% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(0.9);
+	}
+}
+.priscila{
+    color: #292929; 
+    font-family: 'Baginda Script', 
+    sans-serif; 
+    font-size: 35px;
+}
+.assinatura{ 
+    color: #292929;  
+    font-family: 'Baginda Script', 
+    sans-serif; 
+    font-size: 30px;
+}
+.botao-agendar{ 
+    background-color: #292929; 
+    color: #fff; 
+    margin-top: 15px; 
+    margin-bottom: 20px; 
+    border: none; 
+    font-size: 15px; 
+    width: 250px; 
+    padding: 20px 0 20px 0;
+    border-radius: 20px; 
+    background: rgba(41, 41, 41, 0.99); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    z-index: 2;}
+.align-center{ 
+    margin-top: 10%;
+}
+
+
+
+.botao-modelos{ 
+    color: #292929; 
+    margin-top: 10px; 
+    border: none; 
+    font-size: 16px; 
+    width: 250px;
+    padding: 10px 10px 10px 10px; 
+    font-weight: 100; 
+    text-transform: uppercase; 
+    font-family: Montserrat; 
+    border-radius: 52px;border-radius: 52px;
+    background: #f4f4f4 !important;
+    box-shadow: inset 5px 5px 10px #d9d9d9,
+                inset -5px -5px 10px #ffffff !important;
+    }
+.botao-agendamento{  
+    color: #292929; 
+    margin-top: 10px; 
+    border: none; 
+    font-size: 16px; 
+    width: 250px;
+    padding: 10px 10px 10px 10px; 
+    font-weight: 100; 
+    text-transform: uppercase; 
+    font-family: Montserrat; 
+
+    border-radius: 52px;
+background: #f4f4f4;
+box-shadow: inset 5px 5px 10px #d9d9d9,
+            inset -5px -5px 10px #ffffff !important;}
+
+
+
+.align-center{ 
+    margin-top: 20%;
+}
+.galeria-tranca{ 
+    font-size: 18px; 
+    text-transform: uppercase;
+    font-family: 'Gelion', sans-serif;
+    line-height: 0px;
+    padding: 10px 0px 0px 0px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.funcionamento{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Gelion', sans-serif;
+    line-height: 0px;
+    padding: 2px 0px 0px 0px;
+    font-weight: 500;
+}
+.linha
+{
+    border-top: 1px solid #292929;
+}
+.linha2
+{
+    border-top: 1px solid #292929;
+}
+.linha3{
+    border-top: 1px solid #292929;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.dias-de-funcionamento{
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dia, .horario{
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 25px;
+    color: #292929;
+}
+.dia{
+    font-weight: 700;
+}
+.horario{
+    margin-left: 50px;
+}
+.observacao
+{
+    font-size: 14px;
+    margin-top: 7px; 
+}
+.localizacao{
+    font-size: 13px;
+    margin-top: 7px;
+    font-family: Montserrat;
+    color: red; /*temporário*/
+}
+.mapa{
+    margin-right: 30px;
+    width: 380px;
+    height: 400px;
+}
+.calendario
+{
+    font-family: Montserrat;
+    margin-top: 40px;
+}
+.alinhar{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+    z-index: 2;
+}
+.bi-whatsapp
+{
+    margin-left: 10px;
+    z-index: 2;
+}
+.footer{
+    padding: 20px;
+    border: none;
+}
+.redes{
+    background-color: #292929;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.bi-instagram{
+    color: #fff;
+    font-size: 20px;
+}
+.fa-facebook{
+    color: #fff;
+    font-size: 20px;
+}
+.nome-das-redes{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+.priscila-historia
+{
+    font-size: 15px;
+    font-family: Montserrat;
+    text-indent: 20px;
+}
+.historia{
+    font-family: 'Baginda Script', sans-serif;
+    font-size: 50px;
+    line-height: 35px;
+    margin-top: 10px;
+}
+.pri{
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.imagem-rodape{
+    width: 410px;
+    left: -51px;
+    opacity: 30%;
+    position: absolute;
+    z-index: -1;
+}
+#agendamento
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trancas-modelos{
+    background-color: #d4d4d4;
+    padding: 25px;
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+    align-items: center;
+}
+.card{
+    background-color: #d4d4d4;
+    border: none;
+}
+.ir-whatsapp 
+{
+    position: relative;
+    display: inline-block;
+    padding: 15px 50px;
+	margin-bottom: 10px;
+    color: #292929;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 52px;
+    background: #f4f4f4 !important;
+    box-shadow: inset 5px 5px 10px #d9d9d9,
+                inset -5px -5px 10px #ffffff !important;
+}
+    .ir-whatsapp:hover {
+    background: #d9d9d9;
+	color: #292929;
+    text-decoration: none;
+}
+.quem_somos {
+        margin-top: 30px; 
+        padding: 0px 0px 0px 0px; 
+        background-color: #f4f4f4;}
+.quem_somos .area_flex {
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+.quem_somos .caixa {
+    width: 400px; 
+    align-items: center; 
+    padding: 30px; 
+    justify-content: center; 
+}
+.quem_somos .caixa1 {
+    width: 260px; 
+    align-items: center; 
+    justify-content: center; 
+}
+.quem_somos .caixa1  img {
+    width: 100%;
+    border-radius: 20px;
+}
+.quem_somos h3 {
+    font-family: Montserrat; 
+    text-transform: uppercase; 
+    color: #292929; 
+    font-size: 18px; 
+    font-weight: 600;
+    margin-bottom:5px; 
+    text-align: left;
+}
+.quem_somos p {
+    font-family: Montserrat; 
+    color: #292929; 
+    font-size: 14px; 
+    line-height: 25px; 
+    text-align: justify;
+}
+@media (max-width: 991px) 
+{
+.quem_somos .area_flex {
+    display: flex; 
+    flex-flow: column;
+}
+.quem_somos .caixa {
+    padding: 10px;
+    width: 300px;}
+.quem_somos .caixa1 {
+    padding: 10px;
+    width: 300px;}
+.quem_somos .caixa1  img {
+    width: 100%;}	
+.ir-whatsapp{
+    margin-bottom: 10px;
+}}   
+	#quero-fazer-essa
+{
+	padding: 15px 58px;
+}
+.container-header {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.centered {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Baginda Script', sans-serif;
+    font-size: 50px;
+    line-height: 40px;
+  }
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+.coluna {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+.coluna img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 10px;
+}
